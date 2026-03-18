@@ -1,0 +1,8 @@
+{
+  "name": "code",
+  "description": "代码提交与评审工具集，提供 push-diff、code-style、code-review、code-review-fix 命令",
+  "author": {
+    "name": "tot123",
+    "email": "tot123@users.noreply.github.com"
+  }
+}
