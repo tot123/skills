@@ -2,6 +2,10 @@
 
 本文件为 Claude Code 提供项目上下文和工作指导。
 
+## 项目配置
+
+language: zh-CN
+
 ## 项目概述
 
 这是一个 Claude Code Skills 插件仓库，包含代码提交、评审、风格检查等工具。
