@@ -1,6 +1,16 @@
 ---
 allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git add:*), Bash(git commit:*), Bash(git push:*), Bash(git log:*)
 description: 提交代码到远端代码库，遵循 Google 提交规范
+user-provided: |
+  仅当用户明确表达以下意图时才触发此命令：
+  - "帮我提交代码"、"commit"、"push"
+  - "运行 /code:push-diff"
+  - "使用 push-diff 命令"
+
+  不要在以下情况自动触发：
+  - 用户只是询问代码问题
+  - 用户在做其他任务（如代码评审、风格检查）
+  - 用户没有明确要求提交
 ---
 
 ## Context

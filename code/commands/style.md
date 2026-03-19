@@ -1,6 +1,16 @@
 ---
 allowed-tools: Bash(npm run lint:*), Bash(npx eslint:*), Bash(python -m pylint:*), Bash(gofmt:*), Bash(cargo clippy:*), Bash(git diff:*)
 description: 代码风格与质量检查
+user-provided: |
+  仅当用户明确表达以下意图时才触发此命令：
+  - "检查代码风格"、"运行 lint"、"style check"
+  - "运行 /code:style"
+  - "使用 style 命令"
+
+  不要在以下情况自动触发：
+  - 用户只是询问代码问题
+  - 用户在做其他任务（如提交代码、代码评审）
+  - 用户没有明确要求风格检查
 ---
 
 ## 可用工具

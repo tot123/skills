@@ -1,6 +1,16 @@
 ---
 allowed-tools: Bash(git diff:*), Bash(git log:*), Bash(git branch:*)
 description: 代码评审，检查代码质量、安全性和最佳实践
+user-provided: |
+  仅当用户明确表达以下意图时才触发此命令：
+  - "代码评审"、"review"、"review this code"
+  - "运行 /code:review"
+  - "使用 review 命令"
+
+  不要在以下情况自动触发：
+  - 用户只是询问代码问题
+  - 用户在做其他任务（如提交代码、风格检查）
+  - 用户没有明确要求代码评审
 ---
 
 ## 可用工具

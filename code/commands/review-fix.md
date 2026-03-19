@@ -1,6 +1,17 @@
 ---
 allowed-tools: Bash(git diff:*), Bash(npm run:*), Bash(npx:*), Bash(pytest:*), Bash(go test:*), Read, Edit, Write
 description: 修复代码评审中发现的问题，提供可直接应用的修复方案
+user-provided: |
+  仅当用户明确表达以下意图时才触发此命令：
+  - "修复评审问题"、"fix review issues"、"review-fix"
+  - "运行 /code:review-fix"
+  - "使用 review-fix 命令"
+  - 在代码评审后明确要求修复发现的问题
+
+  不要在以下情况自动触发：
+  - 用户只是询问代码问题
+  - 用户在做其他任务（如提交代码、风格检查、代码评审）
+  - 用户没有明确要求修复评审问题
 ---
 
 ## 可用工具
