@@ -3,6 +3,19 @@ allowed-tools: Bash(git diff:*), Bash(npm run:*), Bash(npx:*), Bash(pytest:*), B
 description: 修复代码评审中发现的问题，提供可直接应用的修复方案
 ---
 
+## 可用工具
+
+| 工具 | 用途 | 使用场景 |
+|------|------|----------|
+| `Bash(git diff:*)` | 查看代码变更 | 分析待修复的代码差异，定位问题位置 |
+| `Bash(npm run:*)` | 运行 npm 脚本 | 执行 lint、test、build 等前端项目命令 |
+| `Bash(npx:*)` | 执行 npx 命令 | 运行 eslint --fix、prettier 等自动修复工具 |
+| `Bash(pytest:*)` | 运行 Python 测试 | 验证 Python 代码修复后功能正确性 |
+| `Bash(go test:*)` | 运行 Go 测试 | 验证 Go 代码修复后功能正确性 |
+| `Read` | 读取文件内容 | 查看问题代码的完整上下文 |
+| `Edit` | 编辑文件 | 对问题代码进行精准修复 |
+| `Write` | 写入文件 | 创建新的修复文件或配置 |
+
 ## Context
 
 - Current git status: !`git status`
