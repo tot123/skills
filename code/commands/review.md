@@ -3,8 +3,17 @@ allowed-tools: Bash(git diff:*), Bash(git log:*), Bash(git branch:*)
 description: 代码评审，检查代码质量、安全性和最佳实践
 ---
 
+## 可用工具
+
+| 工具 | 用途 | 使用场景 |
+|------|------|----------|
+| `Bash(git diff:*)` | 查看代码变更 | 对比当前分支与主分支的差异 |
+| `Bash(git log:*)` | 查看提交历史 | 了解最近的代码变更记录 |
+| `Bash(git branch:*)` | 查看分支信息 | 确认当前工作分支 |
+
 ## Context
 
+- Language: !`grep -i "^language:" CLAUDE.md 2>/dev/null | head -1 | cut -d: -f2 | tr -d ' ' || echo "zh-CN"`
 - Current branch: !`git branch --show-current`
 - Changes compared to main: !`git diff main...HEAD --stat 2>/dev/null || git diff origin/main...HEAD --stat 2>/dev/null || echo "Cannot compare to main"`
 - Recent commits: !`git log --oneline -10`
