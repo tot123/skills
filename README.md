@@ -121,6 +121,13 @@ Phase 1
 .
 ├── README.md                   # 项目说明
 ├── CLAUDE.md                   # Claude 指导文档
+├── claude-code-docs/           # Claude Code 中文文档
+│   ├── overview.md             # 概述
+│   ├── quickstart.md           # 快速入门
+│   ├── skills.md               # Skills 使用指南
+│   ├── memory.md               # 记忆和 CLAUDE.md
+│   ├── hooks-guide.md          # Hooks 自动化指南
+│   └── plugins.md              # 插件开发指南
 ├── company-coding-standards/   # 代码规范文档
 │   ├── Google-*.md             # Google 各语言规范
 │   ├── Alibaba-Java-规范.md    # 阿里巴巴 Java 规范
